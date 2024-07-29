@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio CV</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link ke Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .experience, .education {
+            flex: 1;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .experience h2, .education h2 {
+            text-align: center;
+        }
+
+        .experience-image img, .education-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="intro">
+            <table class="intro-table">
+                <tr>
+                    <td class="intro-cell">
+                        <h1>Welcome to My Portfolio</h1>
+                        <p>I am a professional with expertise in various technology and development fields.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-content">
+            <img src="Itu.jpg" alt="Profile Picture" class="profile-pic">
+            <p>Hello! My name is Irwan Sirait. I have extensive experience in web development, machine learning, and computer security. I am always striving to learn and enhance my skills in technology. I have worked on various projects that have made a positive impact on companies and clients.</p>
+        </div>
+        <section id="contact" class="contact-info">
+            <h2>Contact Info</h2>
+            <div class="contact-item">
+                <i class="fas fa-user"></i> <!-- Ikon untuk Nama -->
+                <p><strong>Name:</strong> Irwan Sirait</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i> <!-- Ikon untuk Telepon -->
+                <p><strong>Telephone:</strong> 081397306105</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i> <!-- Ikon untuk Email -->
+                <p><strong>Email:</strong> <a href="mailto:irwansirait812@gmail.com">irwansirait812@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i> <!-- Ikon untuk Alamat -->
+                <p><strong>Address:</strong> Marpoyan Damai, Kota Pekanbaru</p>
+            </div>
+        </section>
+    <div class="container">
+        <section id="experience" class="experience">
+            <h2>Work Experience</h2>
+                <div class="experience-image">
+                <img src="Work Experience.png" alt="Work Experience">
+                </div>
+            <div class="experience-content">
+                <div class="job">
+                    <h3>Wi-Fi Installation at Telkom</h3>
+                    <p>Telkom, Balige, Kab. Toba</p>
+                    <p>Installed and configured Wi-Fi systems at Telkom's office, including setting up routers and access points, and troubleshooting network issues to ensure stable and fast connectivity for users.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education" class="education">
+            <h2>Education</h2>
+                <div class="education-image">
+                <img src="education.webp" alt="Education">
+                </div>
+            <div class="education-content">
+                <div class="school">
+                    <h3>Bachelor of Informatics</h3>
+                    <p>Universitas Muhammadiyah Riau</p>
+                    <p>The Informatics program at Universitas Muhammadiyah Riau focuses on developing technical and theoretical skills in computer science, including programming, computer networks, and information systems. Throughout my studies, I gained in-depth knowledge of various aspects of information technology and practical experience in implementing technology solutions for diverse challenges.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-content">
+            <ul>
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-css3-alt"></i> CSS</li>
+                <li><i class="fab fa-js-square"></i> JavaScript</li>
+                <li><i class="fas fa-network-wired"></i> Network Installation</li>
+                <li><i class="fas fa-tools"></i> Network Repair</li>
+                <!-- Add more skills if needed -->
+            </ul>
+        </div>
+    </section>
+    
+    <section id="expertise" class="expertise">
+        <h2>Expertise</h2>
+        <div class="expertise-content">
+            <div class="expertise-item">
+                <div class="expertise-image">
+                    <img src="wes.jpg" alt="Web Development">
+                    <div class="expertise-description">
+                        <h3>Web Development</h3>
+                        <p>Proficient in creating responsive and interactive websites using HTML, CSS, and JavaScript. Experienced in developing user-friendly interfaces and ensuring cross-browser compatibility.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise-item">
+                <div class="expertise-image">
+                    <img src="network.jpeg" alt="Network Installation">
+                    <div class="expertise-description">
+                        <h3>Network Installation</h3>
+                        <p>Skilled in installing and configuring network hardware and software, including routers, switches, and firewalls. Able to design network layouts and troubleshoot connectivity issues.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise-item">
+                <div class="expertise-image">
+                    <img src="maxresdefault.jpg" alt="Network Repair">
+                    <div class="expertise-description">
+                        <h3>Network Repair</h3>
+                        <p>Experienced in diagnosing and repairing network issues. Proficient in network maintenance and optimization to ensure optimal performance and security.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise-item">
+                <div class="expertise-image">
+                    <img src="header-background.jpg" alt="JavaScript Frameworks">
+                    <div class="expertise-description">
+                        <h3>JavaScript Frameworks</h3>
+                        <p>Familiar with modern JavaScript frameworks such as React, Angular, and Vue.js. Capable of building dynamic and scalable web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-items">
+            <div class="item">
+                <img src="HTML.jpg" alt="Project 1">
+                <h3>Responsive Web Design with HTML & CSS</h3>
+                <p>This project involves creating a fully responsive website using HTML and CSS. The site features a modern design with a clean layout optimized for various devices and screen sizes. Key components include a responsive navigation bar, media queries for different resolutions, and a flexible grid layout. The goal of this project is to showcase the ability to build accessible and user-friendly web interfaces that adapt seamlessly to different display environments.</p>
+            </div>
+            <div class="item">
+                <img src="telkom.jpg" alt="Network Installation">
+                <h3>Network Installation</h3>
+                <p>Network installation involves setting up and configuring hardware and software to build a reliable and efficient network infrastructure. This includes installing cables, network hardware, as well as configuring and maintaining the network to ensure optimal performance.</p>
+            </div>
+            <div class="item">
+                <img src="maintenance.jpg" alt="Network Repair">
+                <h3>Network Repair</h3>
+                <p>Network repair involves identifying and troubleshooting issues within a network that is experiencing disruptions or failures. This process includes analyzing network problems, replacing faulty hardware, fixing misconfigurations, and restoring connectivity. The primary goal is to return the network to normal operation while minimizing downtime and impact on users. Additionally, network repair includes ongoing monitoring to prevent future issues and improve overall network performance.</p>
+            </div>  
+            <div class="item">
+                <img src="java.jpg" alt="JavaScript Frameworks">
+                <h3>JavaScript Frameworks</h3>
+                <p>JavaScript frameworks are libraries that provide structure and functionality to simplify the development of dynamic and interactive web applications. By using frameworks such as React, Angular, or Vue.js, developers can efficiently build complex user interfaces. These frameworks offer reusable components, application state management, and integration with external APIs. The main benefits include increased developer productivity, code consistency, and easier application management.</p>
+            </div>
+        </div>
+    </section>    
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <section id="contact" class="contact-info">
+        <h2>Follow</h2>
+            <div class="contact-item">
+                <i class="fab fa-instagram"></i> <!-- Ikon untuk Instagram -->
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/irwan_sirait01" target="_blank">irwan_sirait01</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-facebook-f"></i> <!-- Ikon untuk Facebook -->
+                <p><strong>Facebook:</strong> <a href="https://facebook.com/irwansirait" target="_blank">Irwan Sirait</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-tiktok"></i> <!-- Ikon untuk TikTok -->
+                <p><strong>TikTok:</strong> <a href="https://tiktok.com/@irwansirait01" target="_blank">irwansirait01</a></p>
+            </div>
+
+            <div class="visitor-container">
+                <div class="visitor-count">
+                    <i class="fas fa-users"></i> <!-- Ikon pengunjung -->
+                    <p><strong>4583 Pengunjung</strong></p>
+                </div>
+            </div>
+            
+
+    <footer>
+        <p>&copy; 2024 Irwan Sirait. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
