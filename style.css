@@ -1,0 +1,512 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home section */
+.home {
+    background: url('Informatika.jpg') no-repeat center center/cover;
+    color: #8b2d2d;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.home .intro {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table */
+}
+
+.intro-cell {
+    background-color: rgba(83, 82, 82, 0.8); /* White background with transparency */
+    border: 5px solid #d8d0e7; /* White border */
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.home h1 {
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif; /* Custom font */
+    color: #fff; /* White text */
+    text-shadow: 
+        1px 1px 0 #643c3c, /* Shadow effect */
+        -1px -1px 0 #4e4580, 
+        1px -1px 0 #fff, 
+        -1px 1px 0 #fff, 
+        0 0 10px rgba(216, 171, 171, 0.7); /* Soft glow */
+}
+
+.home p {
+    font-size: 1.2rem; /* Slightly larger font size for emphasis */
+    font-weight: bold;
+    font-family: 'Arial', sans-serif; /* Custom font */
+    color: #fff; /* White text */
+    text-shadow: 
+        1px 1px 0 #a05555, /* Shadow effect */
+        -1px -1px 0 #1f1c1c, 
+        1px -1px 0 #9075a8, 
+        -1px 1px 0 #a15757, 
+        0 0 8px rgba(255, 255, 255, 0.5); /* Soft glow */
+}
+
+/* About section */
+.about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify; /* Make text justified */
+}
+
+/* Contact section */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item i {
+    font-size: 1.2rem;
+    color: #333;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Experience section */
+.experience {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.experience-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-image {
+    margin-top: 30px; /* Spasi antara konten dan gambar */
+    text-align: center; /* Memastikan gambar berada di tengah */
+}
+
+.experience-image img {
+    max-width: 100%; /* Memastikan gambar tidak melampaui batas kontainer */
+    height: auto; /* Menjaga rasio gambar tetap */
+    display: block; /* Menghilangkan jarak bawah */
+    margin: 0 auto; /* Memastikan gambar berada di tengah */
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    margin: 0 0 10px;
+}
+
+.job p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify; /* Mengatur teks agar rata kiri dan kanan */
+}
+
+/* Education section */
+.education {
+    padding: 50px 0;
+}
+
+.education-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.school {
+    margin-bottom: 20px;
+}
+
+.school h3 {
+    margin: 0 0 10px;
+}
+
+.school p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify; /* Mengatur teks agar rata kiri dan kanan */
+}
+
+/* Skills section */
+.skills {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.skills h2 {
+    margin-bottom: 20px; /* Jarak antara judul dan konten */
+}
+.skills-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills {
+    text-align: center; /* Pusatkan teks dalam kontainer */
+}
+
+.skills-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skills-content ul li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.skills-content ul li i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Expertise */
+.expertise {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.expertise h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.expertise-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.expertise-item {
+    flex: 1 1 calc(50% - 40px); /* Adjust width for 2 items per row */
+    position: relative;
+    overflow: hidden;
+}
+
+.expertise-image {
+    position: relative;
+    width: 100%;
+}
+
+.expertise-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.expertise-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.expertise-item:hover .expertise-description {
+    opacity: 1;
+}
+
+.expertise-description h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .expertise-item {
+        flex: 1 1 100%; /* Stack items vertically on smaller screens */
+    }
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+    .expertise-description h3 {
+        font-size: 1em;
+    }
+    .expertise-description p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* Projects section */
+.projects {
+    padding: 50px 0;
+}
+
+.project-items {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    width: calc(25% - 20px);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item h3 {
+    margin: 15px 0 10px;
+}
+
+.description p {
+    text-align: justify; /* Mengatur teks agar rata kiri dan kanan */
+    font-size: 1rem; /* Menyediakan ukuran font yang konsisten */
+    line-height: 0.6; /* Menyediakan jarak baris yang baik */
+    color: #555; /* Warna teks yang baik untuk kontras */
+}
+
+/* Contact section */
+.contact {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center; /* Memusatkan teks secara horizontal */
+    padding: 20px;      /* Menambahkan padding untuk jarak dari batas footer */
+    background-color: #f1f1f1; /* (Opsional) Warna latar belakang footer */
+    border-top: 1px solid #ddd; /* (Opsional) Garis pemisah di atas footer */
+}
+
+footer p {
+    margin: 0; /* Menghapus margin default dari <p> */
+}
+
+/* Container untuk pengunjung */
+.visitor-container {
+    display: flex;
+    justify-content: flex-start; /* Menempatkan konten di sebelah kiri */
+    padding: 10px 20px; /* Jarak padding untuk konten */
+}
+
+/* Gaya untuk bagian pengunjung */
+.visitor-count {
+    font-size: 1.2rem; /* Ukuran font */
+    color: #333; /* Warna teks */
+    margin: 0; /* Menghapus margin default */
+}
+
+.visitor-count p {
+    margin: 0; /* Menghapus margin default dari <p> */
+    font-weight: bold; /* Membuat teks lebih tebal */
+}
+
+.visitor-count strong {
+    color: #2c3e50; /* Warna teks yang lebih gelap */
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 1024px) {
+    /* Untuk tampilan layar laptop yang lebih kecil */
+    .home {
+        padding: 80px 0; /* Kurangi padding atas dan bawah pada tampilan laptop */
+    }
+
+    .intro-table {
+        width: 90%; /* Kurangi lebar tabel pada layar laptop */
+    }
+
+    .about-content, .experience-content, .education-content, .skills-content {
+        max-width: 90%; /* Kurangi lebar maksimum konten */
+    }
+
+    .project-items {
+        max-width: 100%; /* Maksimalkan lebar proyek pada layar laptop */
+    }
+
+    .item {
+        width: calc(33.333% - 20px); /* 3 item per baris pada layar laptop */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Untuk tampilan layar tablet */
+    .home {
+        padding: 60px 0; /* Kurangi padding atas dan bawah pada tampilan tablet */
+    }
+
+    .intro-table {
+        width: 95%; /* Kurangi lebar tabel pada layar tablet */
+    }
+
+    .about-content, .experience-content, .education-content, .skills-content {
+        max-width: 95%; /* Kurangi lebar maksimum konten */
+    }
+
+    .project-items {
+        max-width: 100%; /* Maksimalkan lebar proyek pada layar tablet */
+    }
+
+    .item {
+        width: calc(50% - 20px); /* 2 item per baris pada layar tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Untuk tampilan layar ponsel */
+    .home {
+        padding: 40px 0; /* Kurangi padding atas dan bawah pada tampilan ponsel */
+    }
+
+    .intro-table {
+        width: 100%; /* Lebar penuh tabel pada layar ponsel */
+    }
+
+    .about-content, .experience-content, .education-content, .skills-content {
+        max-width: 100%; /* Lebar penuh konten */
+    }
+
+    .project-items {
+        max-width: 100%; /* Maksimalkan lebar proyek pada layar ponsel */
+    }
+
+    .item {
+        width: 100%; /* 1 item per baris pada layar ponsel */
+    }
+}
